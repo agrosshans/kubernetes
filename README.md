@@ -60,6 +60,15 @@ source /usr/share/bash-completion/bash_completion
 ```bash
 # vim ~/.bashrc
 ```
+then type _init_completion
+```bash
+# type _init_completion
+```
+
+### Enable kubectl autocompletion
+```bash
+# echo 'source <(kubectl completion bash)' >>~/.bashrc
+```
 
 
 ### kubernetes version
