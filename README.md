@@ -1,9 +1,19 @@
 
 
+https://www.nocentino.com/posts/
+
 ---
 
 # Kubernetes
 Setup and install Kubernetes
+
+
+### Kubernetes version used at the time I wrote the documentation
+
+curl https://cdn.dl.k8s.io/release/stable.txt
+v1.32.3
+
+
 
 ### Hosts Configuration
 On the worker node:
@@ -37,6 +47,20 @@ On the worker node2:
 [root@kubernetes-worker-node2 ~]# cat /etc/redhat-release 
 CentOS Stream release 9
 ```
+
+### Install bash-completion
+```bash
+# sudo dnf install bash-completion
+
+
+add this line in ~/.bashrc
+
+source /usr/share/bash-completion/bash_completion
+
+```bash
+# vim ~/.bashrc
+```
+
 
 ### kubernetes version
 get the latest version of kubernetes from: https://cdn.dl.k8s.io/release/stable.txt
