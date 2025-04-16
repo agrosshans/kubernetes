@@ -12,9 +12,11 @@ On the worker node:
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 
-# Kubernetes cluster
-192.168.124.51 kubernetes-control-plane.local.lanathome.org kubernetes-control-plane.local kubernetes-control-plane
-192.168.124.52 kubernetes-worker-node.local.lanathome.org kubernetes-worker-node.local kubernetes-worker-node
+# kubernetes cluster
+192.168.124.51 kubernetes-control-plane.local.lanathome.org kubernetes-control-plane.local kubernetes-control-plane c1-cp1
+192.168.124.52 kubernetes-worker-node1.local.lanathome.org kubernetes-worker-node1.local kubernetes-worker-node1 c1-node1
+192.168.124.53 kubernetes-worker-node2.local.lanathome.org kubernetes-worker-node2.local kubernetes-worker-node2 c1-node2
+
 ```
 
 ### OS Information
@@ -24,9 +26,15 @@ On the control plane node:
 CentOS Stream release 9
 ```
 
-On the worker node:
+On the worker node1:
 ```bash
-[root@kubernetes-worker-node ~]# cat /etc/redhat-release 
+[root@kubernetes-worker-node1 ~]# cat /etc/redhat-release 
+CentOS Stream release 9
+```
+
+On the worker node2:
+```bash
+[root@kubernetes-worker-node2 ~]# cat /etc/redhat-release 
 CentOS Stream release 9
 ```
 
