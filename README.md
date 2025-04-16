@@ -38,6 +38,10 @@ On the worker node2:
 CentOS Stream release 9
 ```
 
+### kubernetes version
+get the latest version of kubernetes from: https://cdn.dl.k8s.io/release/stable.txt
+
+
 ### Setup Kubernetes Repository
 Create the Kubernetes repository file:
 ```bash
